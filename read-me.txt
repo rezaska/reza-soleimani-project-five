@@ -1,0 +1,4 @@
+NextWatch is a movie source where users can search their next movie they want to watch and add it to their watchlist.
+
+MVP:
+User can search the movie and result will be shown on the page
