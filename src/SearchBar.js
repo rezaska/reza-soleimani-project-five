@@ -2,13 +2,24 @@ import { Component } from 'react';
 
 class SearchBar extends Component {
 
-    handleSubmit = (e) => {
-        e.preventDefault();
+    constructor() {
+        super();
+
+        this.state = {
+            movieName: ''
+        }
     }
 
+    // create the preventDefault function to avoid reloading the screen on the event of submit
+    handleSubmit = (e) => {
+        e.preventDefault();
+        this.props.searchForMovie(this.state.movieName);
+    }
+
+    // create a function that can recieve the value of the user's input
     handleInputChange = (e) => {
         this.setState({
-            movies: e.target.value
+            movieName: e.target.value
         })
     }
 

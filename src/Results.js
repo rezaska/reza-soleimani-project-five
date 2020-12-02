@@ -16,7 +16,7 @@ class Results extends Component {
                                 <p>User Rating: {movie.vote_average}</p>
                                 <img src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} alt={movie.title} />
                                 <p>{movie.overview}</p>
-                                <button>Add to watchlist</button>
+                                <button className='watchListButton'>Add to watchlist</button>
                             </div>
                         )
                     })
