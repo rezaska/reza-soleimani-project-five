@@ -12,7 +12,7 @@ class Results extends Component {
                     this.props.movies.map((movie, index) => {
                         // return all information we have for each movie
                         return (
-                            <div className='card' key={index}>
+                            <div className='card wrapper' key={index}>
                                 <h2>{movie.title}</h2>
                                 <p>User Rating: {movie.vote_average}</p>
                                 {

@@ -11,7 +11,8 @@ class SearchBar extends Component {
         }
     }
 
-    // create the preventDefault function to avoid reloading the screen on the event of submit.
+    // Create the preventDefault function to avoid reloading the screen on the event of submit.
+    // Passing the searched movie to the parent for API's query parameter
     // Move the search bar to the top of the screen.
     handleSubmit = (e) => {
         e.preventDefault();
@@ -32,8 +33,8 @@ class SearchBar extends Component {
     render() {
         return (
             <div className={this.state.searchBarClass}>
-                <form onSubmit={this.handleSubmit} className='movieSearchForm searchBarWrapper'>
-                    <input type='search' placeholder={'Your Next Movie'} id='search' onChange={this.handleInputChange}/>
+                <form onSubmit={this.handleSubmit} className='movieSearchForm'>
+                    <input type='search' placeholder={'Your Next Movie'} className='wrapper' id='search' onChange={this.handleInputChange}/>
                     <button className='searchButton'>Search</button>
                 </form>
             </div>

@@ -48,7 +48,7 @@ class App extends Component {
     }
   }
 
-  // create a function that put the serach result in query in API.
+  // create a function that put the serach result in API's query parameter.
   setSearchQuery = (query) => {
     this.setState({
       searchQuery: query
