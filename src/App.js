@@ -1,9 +1,9 @@
 import Axios from 'axios';
-import { Component } from 'react';
-import './App.css';
+import { Component, Fragment } from 'react';
 import Header from './Header.js';
 import SearchBar from './SearchBar.js';
 import Results from './Results.js';
+import Footer from './Footer.js';
 
 class App extends Component {
 
@@ -18,6 +18,7 @@ class App extends Component {
 
   // componentDidUpdate is called whenever a component props or states has changed.
   componentDidUpdate(prevProps, prevState) {
+
     // if searchQuery is different from what before then we clear the movies and fetch a new search.
     if(this.state.searchQuery !== prevState.searchQuery) {
       this.setState({
@@ -27,6 +28,7 @@ class App extends Component {
     }
   }
 
+  // set a conditional statement so if there is a text in the search bar, the result comes up.
   fetchMovies() {
     if(this.state.searchQuery) {
       Axios({
@@ -38,7 +40,6 @@ class App extends Component {
           query: this.state.searchQuery
         }
       }).then((apiData) => {
-        // console.log(apiData.data.results);
 
         this.setState({
           movies: apiData.data.results,
@@ -47,6 +48,7 @@ class App extends Component {
     }
   }
 
+  // create a function that put the serach result in query in API.
   setSearchQuery = (query) => {
     this.setState({
       searchQuery: query
@@ -56,11 +58,14 @@ class App extends Component {
   render() {
 
     return (
-      <div>
+      <Fragment>
         <Header />
-        <SearchBar searchForMovie={this.setSearchQuery}/>
-        <Results movies={this.state.movies} />
-      </div>
+        <main>
+          <SearchBar searchForMovie={this.setSearchQuery}/>
+          <Results movies={this.state.movies} />
+        </main>
+        <Footer />
+      </Fragment>
     )
   }
 }

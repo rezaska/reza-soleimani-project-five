@@ -1,4 +1,18 @@
 NextWatch is a movie source where users can search their next movie they want to watch and add it to their watchlist.
 
 MVP:
-User can search the movie and result will be shown on the page
+User can search the movie and result will be shown on the page.
+
+Stretch goals:
+- User can add movies to their watch list - using Firebase.
+- User can mark the watch list movies as watched so the movie can be deleted from the watch list.
+- User can filter the result.
+
+pseudo Code:
+// install axios so we can make api call.
+// create a function that can receive the value of the user's input.
+// send the searched movie to the parent (App.js).
+// Make the api call to get movies from the server.
+// Display movies onto the page.
+
+
