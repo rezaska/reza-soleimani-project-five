@@ -16,6 +16,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     /* Backgorund image by Elijah Flores on Unsplash */
 html {
     background-image: url(./Background.jpg);
+    background-size: cover;
 }
 
 /* Typography styles */
@@ -71,7 +72,12 @@ button {
 }
 
 .searchBar {
-    margin-top: 300px;
+    /* margin-top: 300px; */
+
+    position: absolute;
+    bottom: 47%;
+    left: 2%;
+    width: 100%;
 }
 
 .searchBarTop {
@@ -141,6 +147,7 @@ footer {
 
 footer a {
     text-decoration: none;
+    color: #e5e5e5;
 }
 
 footer a:visited {

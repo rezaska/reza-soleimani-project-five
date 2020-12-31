@@ -28,6 +28,10 @@ class App extends Component {
     }
   }
 
+  componentWillMount() {
+    document.title = 'NextWatch'
+  }
+
   // set a conditional statement so if there is a text in the search bar, the result comes up.
   fetchMovies() {
     if(this.state.searchQuery) {
