@@ -18,7 +18,7 @@ class Results extends Component {
                                 {
                                     movie.poster_path 
                                     ? <img src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} alt={movie.title} />
-                                    : <img src={PlaceHolder} alt=""/>
+                                    : <img src={PlaceHolder} alt="Not available!"/>
                                 }
                                 <p className='overviewText'>{movie.overview}</p>
                                 <button className='watchListButton'>Add to watchlist</button>
