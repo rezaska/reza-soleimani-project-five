@@ -13,184 +13,184 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 /* Background image styles */
-    /* Backgorund image by Elijah Flores on Unsplash */
+  /* Backgorund image by Elijah Flores on Unsplash */
 html {
-    background-image: url(./Background.jpg);
-    background-size: cover;
+  background-image: url(./Background.jpg);
+  background-size: cover;
 }
 
 /* Typography styles */
 h1 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 62px;
-    text-transform: uppercase;
-    font-weight: 900;
-    color: #ffffff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 62px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #ffffff;
 }
 
 h2 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 28px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
 }
 
 /* Wrapper styles */
 .wrapper {
-    width: 40%;
+  width: 40%;
 }
 
 /* Header styles */
 .mainHeader {
-    text-align: center;
+  text-align: center;
 }
 
 /* Search bar styles */
 .movieSearchForm {
-    text-align: center;
+  text-align: center;
 }
 
 input {
-    font-family: 'Open Sans', sans-serif;
-    padding: 12px 20px;
-    margin: 8px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  padding: 12px 20px;
+  margin: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .searchButton {
-    padding: 12px 20px;
-    margin: 8px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    color: #000000;
+  padding: 12px 20px;
+  margin: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #000000;
 }
 
 button {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
 }
 
 .searchBar {
-    /* margin-top: 300px; */
+  /* margin-top: 300px; */
 
-    position: absolute;
-    bottom: 47%;
-    left: 2%;
-    width: 100%;
+  position: absolute;
+  bottom: 47%;
+  left: 2%;
+  width: 100%;
 }
 
 .searchBarTop {
-    margin-top: 0px;
+  margin-top: 0px;
 }
 
 /* result cards styles */
 .results {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .card {
-    background-color: #ffffff;
-    text-align: center;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 4px;
+  background-color: #ffffff;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 4px;
 }
 
 .overviewText {
-    text-align: left;
-    font-size: 16px;
-    line-height: normal;
-    padding: 0 45px 0 45px;
+  text-align: left;
+  font-size: 16px;
+  line-height: normal;
+  padding: 0 45px 0 45px;
 }
 
 .watchListButton {
-    padding: 12px 20px;
-    margin: 8px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    background-color: #000000;
-    color: #ffffff;
+  padding: 12px 20px;
+  margin: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 img {
-    max-width: 35vh;
-    height: auto;
-    border-radius: 4px;
+  max-width: 35vh;
+  height: auto;
+  border-radius: 4px;
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* Footer styles */
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: #000000;
-    color: #e5e5e5;
-    text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  color: #e5e5e5;
+  text-align: center;
 }
 
 .footerText {
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 footer a {
-    text-decoration: none;
-    color: #e5e5e5;
+  text-decoration: none;
+  color: #e5e5e5;
 }
 
 footer a:visited {
-    color: #e5e5e5;
+  color: #e5e5e5;
 }
 
 /* Media query styles */
 @media (max-width: 900px) {
-    .results {
-        display: block;
-    }
+  .results {
+    display: block;
+  }
 
-    .card {
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .card {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (max-width: 500px) {
-    img {
-        max-width: 100%;
-        max-height: 100%;
-    }
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-    input {
-        display: block;
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  input {
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .searchButton {
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .searchButton {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .overviewText {
-        padding: 0px;
-    }
+  .overviewText {
+    padding: 0px;
+  }
 
-    .wrapper {
-        width: 70%;
-    }
+  .wrapper {
+    width: 70%;
+  }
 }
